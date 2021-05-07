@@ -79,7 +79,7 @@ class LindenmayerSystemSketch: NSObject, Sketchable {
         // MARK: Initialize L-system state
         
         // What the system will draw, without any re-writes based upon production rules
-        axiom = "EEF"
+        axiom = "EEEFFF"
         
         // DEBUG: What's the word?
         print("Axiom is:")
@@ -89,35 +89,15 @@ class LindenmayerSystemSketch: NSObject, Sketchable {
         word = axiom
         
         // How many times to re-write the word, based upon production rules
-        generations = 5
+        generations = 4
         
         // The rules the define how the word is re-written with each new generation
         rules = [
             "F": [
-                Successor(odds: 3, text: "XXG[-G][+G]"),
-                Successor(odds: 3, text: "XG[--G][+G]"),
-                Successor(odds: 3, text: "XXXG[-G][++G]"),
-            ],
-            "G": [
-                Successor(odds: 3, text: "XXH[-H][+H]"),
-                Successor(odds: 3, text: "XH[--H][+H]"),
-                Successor(odds: 3, text: "XXXH[-H][++H]"),
-            ],
-            "H": [
-                Successor(odds: 3, text: "XXI[-I][+I]"),
-                Successor(odds: 3, text: "XI[--I][+I]"),
-                Successor(odds: 3, text: "XXXI[-I][++I]"),
-            ],
-            "I": [
-                Successor(odds: 3, text: "XXJ[-J][+J]"),
-                Successor(odds: 3, text: "XJ[--J][+J]"),
-                Successor(odds: 3, text: "XXXJ[-J][++J]"),
-            ],
-            "J": [
-                Successor(odds: 3, text: "XXX[-XXB][+XB]"),
-                Successor(odds: 3, text: "XX[--XXB][+XXX]"),
-                Successor(odds: 3, text: "XXXX[-XB][++XXB]"),
-            ],
+                Successor(odds: 4, text: "F[-F][+F]"),
+                Successor(odds: 1, text: "F[--F][+F]"),
+            ]
+        
         ]
         
         // Only write a new word if there are more than 0 generations
@@ -187,13 +167,13 @@ class LindenmayerSystemSketch: NSObject, Sketchable {
         // MARK: Initialize L-system rendering instructions
         
         // The length of the line segments used when drawing the system, at generation 0
-        length = 27
+        length = 40
         
         // The factor by which to reduce the initial line segment length after each generation / word re-write
-        reduction = 1.25
+        reduction = 1.00
         
         // The angle by which the turtle will turn left or right; in degrees.
-        angle = 20
+        angle = 12
         
         // Where the turtle begins drawing on the canvas
         initialPosition = Point(x: 250, y: 100)
