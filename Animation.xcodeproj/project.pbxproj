@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331877642645BA45007EBD8E /* Successor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331877602645BA44007EBD8E /* Successor.swift */; };
+		331877652645BA45007EBD8E /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331877612645BA45007EBD8E /* Visualizer.swift */; };
+		331877662645BA45007EBD8E /* LindenmayerSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331877622645BA45007EBD8E /* LindenmayerSystem.swift */; };
+		331877672645BA45007EBD8E /* Predecessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331877632645BA45007EBD8E /* Predecessor.swift */; };
+		3318776C2645BAD6007EBD8E /* gordon-basic-branching-tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 3318776A2645BAD6007EBD8E /* gordon-basic-branching-tree.json */; };
+		3318776D2645BAD6007EBD8E /* scott-berry-tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 3318776B2645BAD6007EBD8E /* scott-berry-tree.json */; };
 		81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81064A091C130A10007ED524 /* AppDelegate.swift */; };
 		81064A0C1C130A10007ED524 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81064A0B1C130A10007ED524 /* ViewController.swift */; };
 		81064A0E1C130A10007ED524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81064A0D1C130A10007ED524 /* Assets.xcassets */; };
@@ -56,6 +62,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		331877602645BA44007EBD8E /* Successor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Successor.swift; sourceTree = "<group>"; };
+		331877612645BA45007EBD8E /* Visualizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Visualizer.swift; sourceTree = "<group>"; };
+		331877622645BA45007EBD8E /* LindenmayerSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LindenmayerSystem.swift; sourceTree = "<group>"; };
+		331877632645BA45007EBD8E /* Predecessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Predecessor.swift; sourceTree = "<group>"; };
+		3318776A2645BAD6007EBD8E /* gordon-basic-branching-tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "gordon-basic-branching-tree.json"; sourceTree = "<group>"; };
+		3318776B2645BAD6007EBD8E /* scott-berry-tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "scott-berry-tree.json"; sourceTree = "<group>"; };
 		81064A061C130A10007ED524 /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81064A091C130A10007ED524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81064A0B1C130A10007ED524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +149,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		331877692645BAB6007EBD8E /* SystemCatalog */ = {
+			isa = PBXGroup;
+			children = (
+				3318776A2645BAD6007EBD8E /* gordon-basic-branching-tree.json */,
+				3318776B2645BAD6007EBD8E /* scott-berry-tree.json */,
+			);
+			name = SystemCatalog;
+			sourceTree = "<group>";
+		};
 		810649FD1C130A10007ED524 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +165,10 @@
 				814ADAE3248D506300F80486 /* AudioKit */,
 				818878472199C6A0008CB375 /* CanvasGraphics */,
 				81DBFBF622E96442005EDE85 /* Documentation */,
+				331877622645BA45007EBD8E /* LindenmayerSystem.swift */,
+				331877632645BA45007EBD8E /* Predecessor.swift */,
+				331877602645BA44007EBD8E /* Successor.swift */,
+				331877612645BA45007EBD8E /* Visualizer.swift */,
 				81064A081C130A10007ED524 /* Animation */,
 				8188784D2199C7B8008CB375 /* Playground */,
 				81064A071C130A10007ED524 /* Products */,
@@ -163,6 +188,7 @@
 		81064A081C130A10007ED524 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				331877692645BAB6007EBD8E /* SystemCatalog */,
 				81064A1B1C132DA2007ED524 /* Sketch.swift */,
 				81064A1A1C132D69007ED524 /* Support */,
 				814ADAF8248EB34900F80486 /* BasicSketch.swift */,
@@ -474,7 +500,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3318776D2645BAD6007EBD8E /* scott-berry-tree.json in Resources */,
 				81064A0E1C130A10007ED524 /* Assets.xcassets in Resources */,
+				3318776C2645BAD6007EBD8E /* gordon-basic-branching-tree.json in Resources */,
 				81064A111C130A10007ED524 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,9 +522,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				81064A0C1C130A10007ED524 /* ViewController.swift in Sources */,
+				331877652645BA45007EBD8E /* Visualizer.swift in Sources */,
+				331877672645BA45007EBD8E /* Predecessor.swift in Sources */,
 				81064A1C1C132DA2007ED524 /* Sketch.swift in Sources */,
 				819F9E6E26415FDC00C7883F /* LindenmayerSystemSketch.swift in Sources */,
 				81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */,
+				331877662645BA45007EBD8E /* LindenmayerSystem.swift in Sources */,
+				331877642645BA45007EBD8E /* Successor.swift in Sources */,
 				814ADAF5248EAB6A00F80486 /* TurtleSketch.swift in Sources */,
 				814ADAF9248EB34900F80486 /* BasicSketch.swift in Sources */,
 				814ADAFB248EB45F00F80486 /* AudioInputSketch.swift in Sources */,
