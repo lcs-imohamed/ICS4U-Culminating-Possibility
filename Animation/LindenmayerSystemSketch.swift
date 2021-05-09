@@ -65,6 +65,8 @@ class LindenmayerSystemSketch: NSObject, Sketchable {
     
         
         visualizedSystem.render()
+        
+        visualizedSystem.printJSONRepresentation()
       
         
     }
