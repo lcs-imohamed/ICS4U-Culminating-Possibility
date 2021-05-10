@@ -13,6 +13,10 @@
 		331877672645BA45007EBD8E /* Predecessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331877632645BA45007EBD8E /* Predecessor.swift */; };
 		3318776C2645BAD6007EBD8E /* gordon-basic-branching-tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 3318776A2645BAD6007EBD8E /* gordon-basic-branching-tree.json */; };
 		3318776D2645BAD6007EBD8E /* scott-berry-tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 3318776B2645BAD6007EBD8E /* scott-berry-tree.json */; };
+		339102A72649A7BA008FBF4F /* victoria-bush.json in Resources */ = {isa = PBXBuildFile; fileRef = 339102A42649A7B9008FBF4F /* victoria-bush.json */; };
+		339102A82649A7BA008FBF4F /* sihan-tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 339102A52649A7B9008FBF4F /* sihan-tree.json */; };
+		339102A92649A7BA008FBF4F /* aidan-berry-bush.json in Resources */ = {isa = PBXBuildFile; fileRef = 339102A62649A7BA008FBF4F /* aidan-berry-bush.json */; };
+		339102AC2649A82C008FBF4F /* ilana-fern-plant.json in Resources */ = {isa = PBXBuildFile; fileRef = 339102AB2649A82C008FBF4F /* ilana-fern-plant.json */; };
 		81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81064A091C130A10007ED524 /* AppDelegate.swift */; };
 		81064A0C1C130A10007ED524 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81064A0B1C130A10007ED524 /* ViewController.swift */; };
 		81064A0E1C130A10007ED524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81064A0D1C130A10007ED524 /* Assets.xcassets */; };
@@ -68,6 +72,10 @@
 		331877632645BA45007EBD8E /* Predecessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Predecessor.swift; sourceTree = "<group>"; };
 		3318776A2645BAD6007EBD8E /* gordon-basic-branching-tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "gordon-basic-branching-tree.json"; sourceTree = "<group>"; };
 		3318776B2645BAD6007EBD8E /* scott-berry-tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "scott-berry-tree.json"; sourceTree = "<group>"; };
+		339102A42649A7B9008FBF4F /* victoria-bush.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "victoria-bush.json"; sourceTree = "<group>"; };
+		339102A52649A7B9008FBF4F /* sihan-tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sihan-tree.json"; sourceTree = "<group>"; };
+		339102A62649A7BA008FBF4F /* aidan-berry-bush.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "aidan-berry-bush.json"; sourceTree = "<group>"; };
+		339102AB2649A82C008FBF4F /* ilana-fern-plant.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ilana-fern-plant.json"; sourceTree = "<group>"; };
 		81064A061C130A10007ED524 /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81064A091C130A10007ED524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81064A0B1C130A10007ED524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -152,8 +160,12 @@
 		331877692645BAB6007EBD8E /* SystemCatalog */ = {
 			isa = PBXGroup;
 			children = (
+				339102A62649A7BA008FBF4F /* aidan-berry-bush.json */,
+				339102A52649A7B9008FBF4F /* sihan-tree.json */,
+				339102A42649A7B9008FBF4F /* victoria-bush.json */,
 				3318776A2645BAD6007EBD8E /* gordon-basic-branching-tree.json */,
 				3318776B2645BAD6007EBD8E /* scott-berry-tree.json */,
+				339102AB2649A82C008FBF4F /* ilana-fern-plant.json */,
 			);
 			name = SystemCatalog;
 			sourceTree = "<group>";
@@ -501,8 +513,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3318776D2645BAD6007EBD8E /* scott-berry-tree.json in Resources */,
+				339102A92649A7BA008FBF4F /* aidan-berry-bush.json in Resources */,
+				339102A72649A7BA008FBF4F /* victoria-bush.json in Resources */,
 				81064A0E1C130A10007ED524 /* Assets.xcassets in Resources */,
+				339102A82649A7BA008FBF4F /* sihan-tree.json in Resources */,
 				3318776C2645BAD6007EBD8E /* gordon-basic-branching-tree.json in Resources */,
+				339102AC2649A82C008FBF4F /* ilana-fern-plant.json in Resources */,
 				81064A111C130A10007ED524 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,52 +24,107 @@ class LindenmayerSystemSketch: NSObject, Sketchable {
         // Enable faster rendering
         canvas.highPerformance = true
         
-        var system = LindenmayerSystem(axiom: "F",
-                                       rules: [
-                                        
-                                        "F": [
-                                            Successor(odds: 4, text: "XX[+FZ++F-X[+ZF]][-F++X-F]"),
-                                            Successor(odds: 3, text: "XX[-FZ--F+X[-ZF]][+F--X+F]"),
-                                           
-                                        ],
-                                        
-                                        "X": [
-                                            Successor(odds: 1, text: "XF[XF[+FX]]"),
-                                            Successor(odds: 4, text: "XF[XF[+++FX]]")
-                                        
-                                        ],
-                                        
-                                        "Z": [
-                                            Successor(odds: 2, text: "[+X-F-X][++ZF]"),
-                                            Successor(odds: 5, text: "[-X+F+X][--ZF]")
-                                        
-                                        
-                                        ],
-                                        
-                                      
-                                        
-                                        
-                                       ],
-                                       
-                                       generations: 4)
-        
-        var visualizedSystem = Visualizer(for: system,
-                                          on: canvas,
-                                          length: 10,
-                                          reduction: 1,
-                                          angle: 10,
-                                          initialPosition: Point(x: 250, y: 0),
-                                          initialHeading: 90)
+        //Create background
+        canvas.drawShapesWithBorders = false
+                canvas.fillColor = Color(hue: 150, saturation: 90, brightness: 90, alpha: 80)
+                canvas.drawRectangle(at: Point(x: 0, y: 0), width: canvas.width, height: canvas.height / 3 * 2)
+                canvas.fillColor = .red
         
         
+        
+         // Load berry bush visualization
+         var berryBush = Visualizer(fromJSONFile: "scott-berry-tree",
+                                    drawingOn: self.canvas)
+         berryBush.initialPosition = Point(x: 250, y: 75)
+        berryBush.length = 10
+         
+         // Render the tree
+         berryBush.render()
+         
+        
+         // Load fernPlant
+         var fernPlant = Visualizer(fromJSONFile: "ilana-fern-plant",
+                                         drawingOn: self.canvas)
+        fernPlant.reduction = 1.2
+        fernPlant.initialPosition = Point(x: 100, y: 200)
+        
+         // Render fern plant
+         fernPlant.render()
+       
+        
+        // Load bush
+        var bush = Visualizer(fromJSONFile: "victoria-bush", drawingOn: self.canvas)
+        
+        bush.initialPosition = Point(x: 300, y: 250)
+        
+        //render bush
+        bush.render()
+        
+        // Load tree
+        var tree = Visualizer(fromJSONFile: "gordon-basic-branching-tree", drawingOn: self.canvas)
+        tree.initialPosition = Point(x: 450, y: 100)
+         
+        // render tree
+        tree.render()
+
+        
+        
+        // Load second berry bush
+        
+        var smallerBerryBush = Visualizer(fromJSONFile: "aidan-berry-bush", drawingOn: self.canvas)
+        smallerBerryBush.initialPosition = Point(x: 100, y: 50)
+        smallerBerryBush.reduction = 1.5
+        
+        smallerBerryBush.render()
+        
+        
+     }
+//        var system = LindenmayerSystem(axiom: "F",
+//                                       rules: [
+//
+//                                        "F": [
+//                                            Successor(odds: 4, text: "XX[+FZ++F-X[+ZF]][-F++X-F]"),
+//                                            Successor(odds: 3, text: "XX[-FZ--F+X[-ZF]][+F--X+F]"),
+//
+//                                        ],
+//
+//                                        "X": [
+//                                            Successor(odds: 1, text: "XF[XF[+FX]]"),
+//                                            Successor(odds: 4, text: "XF[XF[+++FX]]")
+//
+//                                        ],
+//
+//                                        "Z": [
+//                                            Successor(odds: 2, text: "[+X-F-X][++ZF]"),
+//                                            Successor(odds: 5, text: "[-X+F+X][--ZF]")
+//
+//
+//                                        ],
+//
+//
+//
+//
+//                                       ],
+//
+//                                       generations: 4)
+//
+//        var visualizedSystem = Visualizer(for: system,
+//                                          on: canvas,
+//                                          length: 10,
+//                                          reduction: 1,
+//                                          angle: 10,
+//                                          initialPosition: Point(x: 250, y: 0),
+//                                          initialHeading: 90)
+//
+//
+//
+//
+//        visualizedSystem.render()
+//
+//        visualizedSystem.printJSONRepresentation()
+//
+//
     
-        
-        visualizedSystem.render()
-        
-        visualizedSystem.printJSONRepresentation()
-      
-        
-    }
     
     
     // This function runs repeatedly, forever, to create the animated effect
