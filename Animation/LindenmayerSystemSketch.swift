@@ -79,53 +79,7 @@ class LindenmayerSystemSketch: NSObject, Sketchable {
         
         
      }
-//        var system = LindenmayerSystem(axiom: "F",
-//                                       rules: [
-//
-//                                        "F": [
-//                                            Successor(odds: 4, text: "XX[+FZ++F-X[+ZF]][-F++X-F]"),
-//                                            Successor(odds: 3, text: "XX[-FZ--F+X[-ZF]][+F--X+F]"),
-//
-//                                        ],
-//
-//                                        "X": [
-//                                            Successor(odds: 1, text: "XF[XF[+FX]]"),
-//                                            Successor(odds: 4, text: "XF[XF[+++FX]]")
-//
-//                                        ],
-//
-//                                        "Z": [
-//                                            Successor(odds: 2, text: "[+X-F-X][++ZF]"),
-//                                            Successor(odds: 5, text: "[-X+F+X][--ZF]")
-//
-//
-//                                        ],
-//
-//
-//
-//
-//                                       ],
-//
-//                                       generations: 4)
-//
-//        var visualizedSystem = Visualizer(for: system,
-//                                          on: canvas,
-//                                          length: 10,
-//                                          reduction: 1,
-//                                          angle: 10,
-//                                          initialPosition: Point(x: 250, y: 0),
-//                                          initialHeading: 90)
-//
-//
-//
-//
-//        visualizedSystem.render()
-//
-//        visualizedSystem.printJSONRepresentation()
-//
-//
-    
-    
+
     
     // This function runs repeatedly, forever, to create the animated effect
     func draw() {
