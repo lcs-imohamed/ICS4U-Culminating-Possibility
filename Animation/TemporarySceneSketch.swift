@@ -42,7 +42,7 @@ class TemporarySceneSketch: NSObject, Sketchable {
         //render cattail
         cattail.render()
         
-       
+       //Make cat tail that appears in random locations around pond
         
         for x in stride(from: 1.0, through: 300.0, by: 50.0) {
             
