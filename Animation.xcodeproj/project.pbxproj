@@ -22,6 +22,13 @@
 		339102A92649A7BA008FBF4F /* aidan-berry-bush.json in Resources */ = {isa = PBXBuildFile; fileRef = 339102A62649A7BA008FBF4F /* aidan-berry-bush.json */; };
 		339102AC2649A82C008FBF4F /* ilana-fern-plant.json in Resources */ = {isa = PBXBuildFile; fileRef = 339102AB2649A82C008FBF4F /* ilana-fern-plant.json */; };
 		33F7C921266583330004E9F1 /* anotherLeafyPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7C920266583330004E9F1 /* anotherLeafyPlant.swift */; };
+		33F7C9262665D5810004E9F1 /* aidan-Cattail-sketch.json in Resources */ = {isa = PBXBuildFile; fileRef = 33F7C9252665D5810004E9F1 /* aidan-Cattail-sketch.json */; };
+		33F7C9292665D5C60004E9F1 /* TemporarySceneSketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7C9282665D5C60004E9F1 /* TemporarySceneSketch.swift */; };
+		33F7C92C2665D8120004E9F1 /* nicole-ocotillo-bush.json in Resources */ = {isa = PBXBuildFile; fileRef = 33F7C92B2665D8120004E9F1 /* nicole-ocotillo-bush.json */; };
+		33F7C92F2665D8AA0004E9F1 /* aidan-willowTree-sketch.json in Resources */ = {isa = PBXBuildFile; fileRef = 33F7C92E2665D8AA0004E9F1 /* aidan-willowTree-sketch.json */; };
+		33F7C9322665D9E70004E9F1 /* Fernanda-Plan2.json in Resources */ = {isa = PBXBuildFile; fileRef = 33F7C9312665D9E70004E9F1 /* Fernanda-Plan2.json */; };
+		33F7C9352665E16A0004E9F1 /* ripplingWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7C9342665E16A0004E9F1 /* ripplingWater.swift */; };
+		33F7C9382665EC1A0004E9F1 /* ilana-flower-plant.json in Resources */ = {isa = PBXBuildFile; fileRef = 33F7C9372665EC1A0004E9F1 /* ilana-flower-plant.json */; };
 		81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81064A091C130A10007ED524 /* AppDelegate.swift */; };
 		81064A0C1C130A10007ED524 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81064A0B1C130A10007ED524 /* ViewController.swift */; };
 		81064A0E1C130A10007ED524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81064A0D1C130A10007ED524 /* Assets.xcassets */; };
@@ -86,6 +93,13 @@
 		339102A62649A7BA008FBF4F /* aidan-berry-bush.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "aidan-berry-bush.json"; sourceTree = "<group>"; };
 		339102AB2649A82C008FBF4F /* ilana-fern-plant.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ilana-fern-plant.json"; sourceTree = "<group>"; };
 		33F7C920266583330004E9F1 /* anotherLeafyPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anotherLeafyPlant.swift; sourceTree = "<group>"; };
+		33F7C9252665D5810004E9F1 /* aidan-Cattail-sketch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "aidan-Cattail-sketch.json"; sourceTree = "<group>"; };
+		33F7C9282665D5C60004E9F1 /* TemporarySceneSketch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporarySceneSketch.swift; sourceTree = "<group>"; };
+		33F7C92B2665D8120004E9F1 /* nicole-ocotillo-bush.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "nicole-ocotillo-bush.json"; sourceTree = "<group>"; };
+		33F7C92E2665D8AA0004E9F1 /* aidan-willowTree-sketch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "aidan-willowTree-sketch.json"; sourceTree = "<group>"; };
+		33F7C9312665D9E70004E9F1 /* Fernanda-Plan2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Fernanda-Plan2.json"; sourceTree = "<group>"; };
+		33F7C9342665E16A0004E9F1 /* ripplingWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ripplingWater.swift; sourceTree = "<group>"; };
+		33F7C9372665EC1A0004E9F1 /* ilana-flower-plant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ilana-flower-plant.json"; sourceTree = "<group>"; };
 		81064A061C130A10007ED524 /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81064A091C130A10007ED524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81064A0B1C130A10007ED524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -175,7 +189,12 @@
 				339102A42649A7B9008FBF4F /* victoria-bush.json */,
 				3318776A2645BAD6007EBD8E /* gordon-basic-branching-tree.json */,
 				3318776B2645BAD6007EBD8E /* scott-berry-tree.json */,
+				33F7C9252665D5810004E9F1 /* aidan-Cattail-sketch.json */,
 				339102AB2649A82C008FBF4F /* ilana-fern-plant.json */,
+				33F7C9372665EC1A0004E9F1 /* ilana-flower-plant.json */,
+				33F7C92B2665D8120004E9F1 /* nicole-ocotillo-bush.json */,
+				33F7C92E2665D8AA0004E9F1 /* aidan-willowTree-sketch.json */,
+				33F7C9312665D9E70004E9F1 /* Fernanda-Plan2.json */,
 			);
 			name = SystemCatalog;
 			sourceTree = "<group>";
@@ -224,6 +243,8 @@
 				3314F2EF2662BC8B001FF190 /* FlowerSketch.swift */,
 				3314F2F22663DD54001FF190 /* FlowerPlantSketch.swift */,
 				33F7C920266583330004E9F1 /* anotherLeafyPlant.swift */,
+				33F7C9282665D5C60004E9F1 /* TemporarySceneSketch.swift */,
+				33F7C9342665E16A0004E9F1 /* ripplingWater.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -527,13 +548,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F7C92F2665D8AA0004E9F1 /* aidan-willowTree-sketch.json in Resources */,
 				3318776D2645BAD6007EBD8E /* scott-berry-tree.json in Resources */,
 				339102A92649A7BA008FBF4F /* aidan-berry-bush.json in Resources */,
+				33F7C92C2665D8120004E9F1 /* nicole-ocotillo-bush.json in Resources */,
+				33F7C9322665D9E70004E9F1 /* Fernanda-Plan2.json in Resources */,
 				339102A72649A7BA008FBF4F /* victoria-bush.json in Resources */,
+				33F7C9262665D5810004E9F1 /* aidan-Cattail-sketch.json in Resources */,
 				81064A0E1C130A10007ED524 /* Assets.xcassets in Resources */,
 				339102A82649A7BA008FBF4F /* sihan-tree.json in Resources */,
 				3318776C2645BAD6007EBD8E /* gordon-basic-branching-tree.json in Resources */,
 				339102AC2649A82C008FBF4F /* ilana-fern-plant.json in Resources */,
+				33F7C9382665EC1A0004E9F1 /* ilana-flower-plant.json in Resources */,
 				81064A111C130A10007ED524 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,6 +582,7 @@
 				331877652645BA45007EBD8E /* Visualizer.swift in Sources */,
 				331877672645BA45007EBD8E /* Predecessor.swift in Sources */,
 				81064A1C1C132DA2007ED524 /* Sketch.swift in Sources */,
+				33F7C9292665D5C60004E9F1 /* TemporarySceneSketch.swift in Sources */,
 				819F9E6E26415FDC00C7883F /* LindenmayerSystemSketch.swift in Sources */,
 				81064A0A1C130A10007ED524 /* AppDelegate.swift in Sources */,
 				3314F2E6265FDD17001FF190 /* LSColor.swift in Sources */,
@@ -563,6 +590,7 @@
 				331877642645BA45007EBD8E /* Successor.swift in Sources */,
 				814ADAF5248EAB6A00F80486 /* TurtleSketch.swift in Sources */,
 				814ADAF9248EB34900F80486 /* BasicSketch.swift in Sources */,
+				33F7C9352665E16A0004E9F1 /* ripplingWater.swift in Sources */,
 				33F7C921266583330004E9F1 /* anotherLeafyPlant.swift in Sources */,
 				3314F2F32663DD54001FF190 /* FlowerPlantSketch.swift in Sources */,
 				814ADAFB248EB45F00F80486 /* AudioInputSketch.swift in Sources */,

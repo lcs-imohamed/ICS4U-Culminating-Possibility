@@ -45,14 +45,14 @@ class FlowerSketch: NSObject, Sketchable {
             
             "A": [Successor(odds: 2, text: """
                                             
-                                            [L]
+                                            
                                             [++ffffffffL]
                                             [-ffffffL]
 
                                             
                                             """),
                   
-                  Successor(odds: 2, text: """
+                  Successor(odds: 1, text: """
                                               [+fffffffL]
                                               [-ffffffL]
                                               """),
@@ -93,6 +93,9 @@ class FlowerSketch: NSObject, Sketchable {
         
         // Render the system
         visualizedFlower.render()
+        
+        //Get json
+        visualizedFlower.printJSONRepresentation()
         
     }
     

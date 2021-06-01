@@ -1,6 +1,6 @@
 {
   "system" : {
-    "axiom" : "[EEF][++EEF][--EEF]",
+    "axiom" : "0[EEF][++EEF][--EEF]",
     "rules" : {
       "H" : [
         {
@@ -81,6 +81,15 @@
     },
     "generations" : 6
   },
+  
+  "colors" : {
+      "0" : {
+        "hue" : 275,
+        "saturation" : 100,
+        "brightness" : 50,
+        "alpha" : 100
+      }
+      },
   "length" : 15,
   "angle" : 15,
   "initialX" : 400,
