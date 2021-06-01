@@ -23,29 +23,72 @@ class FlowerSketch: NSObject, Sketchable {
         
         
         // Make diamond
-//    [++F++F+F++F-]
+        //    [++F++F+F++F-]
         // Enable faster rendering
         canvas.highPerformance = true
         
         // Create the basic L-system
-        var flowerSystem = LindenmayerSystem(axiom: "L", rules: [
-            "L": [Successor(odds: 1, text: "0[F--F+F--F+F--F+F--F+F--F+F--F]1[--F++F--f--F++F--f--F++F--f--F]")],
+        var flowerSystem = LindenmayerSystem(axiom: "S", rules: [
+            
+            "S": [Successor(odds: 1, text: """
+                                            [+++XL][+f+f+fA]
+
+                                            """),
+            ],
+            
+            "X": [Successor(odds: 1, text: """
+                                            FF[+X][-X]FFX
+                                            
+                                            """),
+                
+            ],
+            
+            "A": [Successor(odds: 2, text: """
+                                            
+                                            [L]
+                                            [++ffffffffL]
+                                            [-ffffffL]
+
+                                            
+                                            """),
+                  
+                  Successor(odds: 2, text: """
+                                              [+fffffffL]
+                                              [-ffffffL]
+                                              """),
+            ],
+            
+            
+            
+            "L": [Successor(odds: 2, text: """
+                                            0[F----F++F----F++F----F++F----F++F----F++F----F]
+                                            1[----F++++F----f----F++++F----f----F++++F]
+
+                                            """),
+                  Successor(odds: 1, text: """
+                                                  2[F----F++F----F++F----F++F----F++F----F++F----F]
+                                                  3[----F++++F----f----F++++F----f----F++++F]
+
+                                                  """),
+            ],
         ],
-        generations: 1)
+        generations: 5)
         
         
         
         // Visualize the system
         var visualizedFlower = Visualizer(for: flowerSystem,
                                           on: canvas,
-                                          length: 40,
-                                          reduction: 3,
-                                          angle: 60,
-                                          initialPosition: Point(x: 100, y: 100),
+                                          length: 405,
+                                          reduction: 2,
+                                          angle: 30,
+                                          initialPosition: Point(x: 250, y: 100),
                                           initialHeading: 0,
                                           colors: [
                                             "0" : LSColor(hue: 275, saturation: 100, brightness: 50, alpha: 100),
                                             "1" : LSColor(hue: 304, saturation: 100, brightness: 100, alpha: 100),
+                                            "2" : LSColor(hue: 0, saturation: 94, brightness: 47, alpha: 100),
+                                            "3" : LSColor(hue: 0, saturation: 94, brightness: 92, alpha: 100)
                                           ])
         
         // Render the system

@@ -25,9 +25,9 @@ class LeafSketch: NSObject, Sketchable {
         canvas.highPerformance = true
         
         // Create the basic L-system
-        var leafSystem = LindenmayerSystem(axiom: "L",
+        var leafSystem = LindenmayerSystem(axiom: "Z",
                                                rules: [
-                                                "L": [Successor(odds: 1, text: "0[++++++F--F--F--F--F--F--F]1[+++++F--F--F--F--F--F]2[++++F--F--F--F--F]3[fFFF]2[----F++F++F++F++F]1[-----F++F++F++F++F++F]0[------F++F++F++F++F++F++F]")],
+                                                "Z": [Successor(odds: 1, text: "0[++++++F--F--F--F--F--F--F]1[+++++F--F--F--F--F--F]2[++++F--F--F--F--F]3[fFFF]2[----F++F++F++F++F]1[-----F++F++F++F++F++F]0[------F++F++F++F++F++F++F]")],
                                                ],
                                                generations: 1)
         
